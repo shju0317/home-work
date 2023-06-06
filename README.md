@@ -1,6 +1,3 @@
-
-![header](https://capsule-render.vercel.app/api?type=wave&color=100%:79E5CB&height=300&section=header&text=capsule%20render&fontSize=90)
-
 :punch: **FE School 6기 과제 저장소**  :punch:
  ---
  
