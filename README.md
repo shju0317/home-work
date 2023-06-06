@@ -2,7 +2,7 @@
  :punch: **FE School 6기 과제 저장소**  :punch:
  ---
  
- :fire: **mission 1.**  :fire:
+ :fire: ## mission 1.  :fire:
  
 **background 과제**
 
