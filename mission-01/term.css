@@ -1,5 +1,49 @@
-.termWrap{
+.termWrapper{
   width: 250px;
   height: 259px;
   background-color: #ccc;
+  border: 1px solid #121212;
+  border-radius: 5px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.termWrapper h2{
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.termList{
+  font-size: 12px;
+  margin: 0;
+}
+
+.termList dt{
+  color: #296897;
+  font-weight: bold;
+  float: right;
+  width: 65%;
+  padding-bottom: 5px;
+}
+
+.termList dd{
+  margin-left: 0;
+}
+
+.termWrap {
+  width: 218px;
+  height: 88px;
+  
+}
+
+.termWrap img{
+  float: left;
+  width: 60px;
+  height: 68px;
+}
+
+.termDesc{
+  float: right;
+  width: 65%;
 }
