@@ -1,8 +1,9 @@
 
- :punch: ###FE School 6기 과제 저장소  :punch:
+ :punch: **FE School 6기 과제 저장소**  :punch:
  
  
- :fire: ##mission 1.  :fire:
+ :fire: **mission 1.**  :fire:
+ 
 **background 과제**
 
 - background 실습을 위한 과제 파일은 mission-01/validation.html 파일과 mission-01/validation.css 파일을 생성한 후 각각 마크업과 스타일을 작성한다.
