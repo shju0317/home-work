@@ -41,4 +41,25 @@ body{
   }
 ```
 - '회원가입'은 좌측으로, '아이디 비밀번호 찾기'는 우측으로 정렬하기 위해 각각 float:left와 float:right 활용
+```css
+.memberOnly li:first-child{
+  float: left;
+}
+
+.memberOnly li:last-child{
+  float: right;
+}
+```
 - 회색선을 표현하기 위해 memberOnly 클래스에 가상요소 추가
+```css
+.memberOnly::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1px;
+  width: 203px;
+  margin-left: 8px;
+  border-bottom: 1px solid #ccc;
+}
+```
