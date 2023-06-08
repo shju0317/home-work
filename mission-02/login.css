@@ -1,9 +1,11 @@
 @import url(../a11y.css);
 
+/* Pretendard 폰트 설정 */
 body{
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
+/* 아이디, 비밀번호 입력 */
 .loginForm{
   background: linear-gradient(90deg, #ed552f, #e8852e);
   padding: 12px;
@@ -39,6 +41,7 @@ fieldset{
 
 .userInputWrapper label{
   font-size: 14px;
+  color: #181818;
 }
 
 .userEmailWrapper, .userPasswordWrapper{
@@ -47,13 +50,14 @@ fieldset{
 }
 
 .userEmailWrapper{
-  margin-bottom: 5.5px;
+  margin-bottom: 8.5px;
 }
 
 .userEmailInput, .userPasswordInput{
   box-sizing: border-box;
   position: absolute;
   right: 0;
+  padding: 0px 0px 0px 8px;
 }
 
 #userEmail, #userPassword{
@@ -80,16 +84,39 @@ fieldset{
 
 /* 회원가입, 아이디 비밀번호 찾기 */
 .memberOnly{
-  width: 100%;
+  position: relative;
   height: 36px;
   background-color: #fff;
   list-style: none;
-  padding: 0;
+  padding: 8px;
   margin: 0;
+  box-sizing: border-box;
   font-size: 13px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   border-radius: 0 0 5px 5px;
+  
 }
 
+.memberOnly a{
+  color: #181818;
+  text-decoration: none;
+}
+
+.memberOnly li:first-child{
+  float: left;
+}
+
+.memberOnly li:last-child{
+  float: right;
+}
+
+/* 밑줄 넣기 */
+.memberOnly::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1px;
+  width: 203px;
+  margin-left: 8px;
+  border-bottom: 1px solid #ccc;
+}
