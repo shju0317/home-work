@@ -23,7 +23,15 @@ body{
 }
 ```
 (폰트설정 관련 참고: https://github.com/orioncactus/pretendard )
-- 아이디, 비밀번호 입력란(input요소)을 우측에 위치시키기 위해 position: absolute 활용
+- 아이디, 비밀번호 입력란(input 요소)을 우측에 위치시키기 위해 position: absolute 활용
+```css
+.userEmailInput, .userPasswordInput{
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  padding: 0px 0px 0px 8px;
+}
+```
 - '로그인'버튼을 우측에 위치시키기 위해 position: absolute 활용
 ```css
 .button{
