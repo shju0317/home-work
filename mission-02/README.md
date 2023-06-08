@@ -1,6 +1,6 @@
-### :fire: mission 2.
+# :fire: mission 2.
 
-## position 과제
+## :grey_question: position 과제
 - position 실습을 위한 과제 파일은 mission-02/login.html 파일과 mission-02/login.css 파일을 생성 후 각각 마크업과 스타일을 작성한다.
 - 마크업 순서는 1. 로그인(제목), 2. 아이디 레이블과 입력서식, 3. 비밀번호 레이블과 입력서식, 4. 로그인 버튼, 5. 회원가입 및 아이디/비밀번호 찾기 링크 순으로 구현한다.
 - 이미지 assets 없이 모든 디자인을 CSS로 구현한다. (회원가입 앞에 특수문자는 구현하지 않아도 됨)
@@ -8,6 +8,6 @@
 - 회원가입, 아이디/비밀번호 찾기 영역은 float을 활용하여 구현한다.
 - mission-02/README.md 파일을 생성한 후 마크업 코드와 CSS 코드에 대한 설명을 적고 아래 이미지와 같이 완성된 UI 스크린샷을 삽입한다.
 
-## 코드리뷰
+## :speech_balloon: 코드리뷰
 
 ## :camera: 결과 스크린샷
