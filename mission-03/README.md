@@ -9,7 +9,7 @@
 - mission-03/README.md 파일을 생성한 후 마크업 코드와 CSS 코드에 대한 설명을 적고 아래 이미지와 같이 완성된 UI 스크린샷을 삽입한다.
 
 ## :camera: 결과 스크린샷
-![transition_screenshot](https://github.com/shju0317/home-work/assets/31871923/1f81d68b-2376-48f7-9a2e-aa7445cdb0dd)
+![transition_screenshot](https://github.com/shju0317/home-work/assets/31871923/ecc92e19-4363-4573-9dd8-2002a3a299ee)
 
 ## :speech_balloon: 코드리뷰
 - mission-03/transition.html 파일과 mission-03/transition.css 파일을 생성 후 각각 마크업과 스타일을 작성
@@ -50,9 +50,11 @@ body{
 }
 ```
 - 리스트가 펼쳐지고 접힐 때 바깥 영역(.sites)의 크기도 함께 움직일 수 있도록 섹션(.sites)의 높이를 auto로 적용
+- linear-gradient를 사용하여 두 가지 배경색(#ccc, #ddd) 적용
 ```css
 .sites{
   height: auto;
+  background-image: linear-gradient(to bottom, #ccc 50%, #ddd 50%);
 }
 ```
 - transition을 적용하여 margin-top을 조정
