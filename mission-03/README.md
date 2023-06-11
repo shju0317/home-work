@@ -9,10 +9,23 @@
 - mission-03/README.md 파일을 생성한 후 마크업 코드와 CSS 코드에 대한 설명을 적고 아래 이미지와 같이 완성된 UI 스크린샷을 삽입한다.
 
 ## :camera: 결과 스크린샷
+![Transition_Screenshot](https://github.com/shju0317/home-work/assets/31871923/7362783e-d795-4b6f-b043-30209ed6a2e0)
 
 
 ## :speech_balloon: 코드리뷰
 - mission-03/transition.html 파일과 mission-03/transition.css 파일을 생성 후 각각 마크업과 스타일을 작성
+```html
+  <section class="sites">
+    <h2 class="sites-title">관련 <span>사이트</span></h2>
+    <ul class="site-list">
+      <li><a href="#">제로베이스</a></li>
+      <li><a href="#">MDN</a></li>
+      <li><a href="#">웹접근성 연구소</a></li>
+      <li><a href="#">Web Standards</a></li>
+      <li><a href="#">W3C</a></li>
+    </ul>
+  </section>
+```
 - 'Pretendard' 폰트 설정
 ```html
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
@@ -23,3 +36,31 @@ body{
 }
 ```
 (폰트설정 관련 참고: https://github.com/orioncactus/pretendard )
+- transition을 사용하여 리스트(.site-list)에 마우스가 올라가면(hover) 리스트가 아래로 펼쳐지면서 리스트 항목이 보이게 함
+- 리스트가 접혀있을 땐 리스트 항목이 보이지 않도록 overflow: hidden을 적용
+```css
+.site-list{
+  width: 100%;
+  height: 30px;
+  transition: height 300ms linear;
+  overflow: hidden;
+}
+
+.site-list:hover{
+  height: 160px;
+  transition: height 300ms linear;
+}
+```
+- transition을 적용하여 margin-top을 조정
+- 리스트가 펼쳐지거나 접힌 다음에 transition이 적용될 수 있도록 delay값을 줌
+```css
+.site-list li{
+  margin-top: 0px;
+  transition: margin-top 300ms linear 300ms;
+}
+
+.site-list li:first-child:hover{
+  margin-top: 5px;
+  transition: margin-top 300ms linear 300ms;
+}
+```
