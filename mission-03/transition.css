@@ -55,7 +55,8 @@ body{
 
 /* 관련 사이트 */
 .sites{
-  background: #ccc;
+  /* background: #ccc; */
+  background-image: linear-gradient(to bottom, #ccc 50%, #ddd 50%);
   width: 190px;
   height: auto;
   border-radius: 5px;
