@@ -9,8 +9,7 @@
 - mission-03/README.md 파일을 생성한 후 마크업 코드와 CSS 코드에 대한 설명을 적고 아래 이미지와 같이 완성된 UI 스크린샷을 삽입한다.
 
 ## :camera: 결과 스크린샷
-![Transition_Screenshot](https://github.com/shju0317/home-work/assets/31871923/7362783e-d795-4b6f-b043-30209ed6a2e0)
-
+![transition_screenshot](https://github.com/shju0317/home-work/assets/31871923/1f81d68b-2376-48f7-9a2e-aa7445cdb0dd)
 
 ## :speech_balloon: 코드리뷰
 - mission-03/transition.html 파일과 mission-03/transition.css 파일을 생성 후 각각 마크업과 스타일을 작성
@@ -40,7 +39,6 @@ body{
 - 리스트가 접혀있을 땐 리스트 항목이 보이지 않도록 overflow: hidden을 적용
 ```css
 .site-list{
-  width: 100%;
   height: 30px;
   transition: height 300ms linear;
   overflow: hidden;
@@ -49,6 +47,12 @@ body{
 .site-list:hover{
   height: 160px;
   transition: height 300ms linear;
+}
+```
+- 리스트가 펼쳐지고 접힐 때 바깥 영역(.sites)의 크기도 함께 움직일 수 있도록 섹션(.sites)의 높이를 auto로 적용
+```css
+.sites{
+  height: auto;
 }
 ```
 - transition을 적용하여 margin-top을 조정
