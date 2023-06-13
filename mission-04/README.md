@@ -14,32 +14,32 @@
 
 ## :speech_balloon: 코드리뷰
 - mission-04/grid.html 파일과 mission-04/grid.css 파일을 생성 후 각각 마크업과 스타일을 작성
-```html
-  <section class="news">
-    <h2 class="news-title">새소식</h2>
-    <div class="more">더보기</div>
-    <figure class="news-thumbnail">
-      <img src="./images/wc3_main_capture.PNG" alt="W3C 리뉴얼" />
-      <figcaption>W3C 리뉴얼</figcaption>
-    </figure>
-    <div class="news-info">
-      <p>W3C 사이트가 리뉴얼 되었습니다.</p>
-      <span>2022.07.18</span>
-    </div>
-    <div class="news-content">
-      디자인 및 다양한 view 환경을 고려하여 구성되어 있으며, 기존보다 최신 정보 및 개발자를 위한 기술 가이드도 찾기 쉽도록 구성되어 있습니다.
-    </div>
-  </section>
-```
-- 'Pretendard' 폰트 설정
-```html
-<link rel="stylesheet preload" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
-```
-```css
-body{
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-```
+  ```html
+    <section class="news">
+      <h2 class="news-title">새소식</h2>
+      <div class="more">더보기</div>
+      <figure class="news-thumbnail">
+        <img src="./images/wc3_main_capture.PNG" alt="W3C 리뉴얼" />
+        <figcaption>W3C 리뉴얼</figcaption>
+      </figure>
+      <div class="news-info">
+        <p>W3C 사이트가 리뉴얼 되었습니다.</p>
+        <span>2022.07.18</span>
+      </div>
+      <div class="news-content">
+        디자인 및 다양한 view 환경을 고려하여 구성되어 있으며, 기존보다 최신 정보 및 개발자를 위한 기술 가이드도 찾기 쉽도록 구성되어 있습니다.
+      </div>
+    </section>
+  ```
+  - 'Pretendard' 폰트 설정
+  ```html
+  <link rel="stylesheet preload" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+  ```
+  ```css
+  body{
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  }
+  ```
 (폰트설정 관련 참고: https://github.com/orioncactus/pretendard )
 
 - grid를 활용하여 레이아웃을 구현. 6개의 열과 행은 auto로 설정.
