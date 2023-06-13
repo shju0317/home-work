@@ -59,56 +59,56 @@
     color: #ED552F;
     position: relative;
   }
-
-.more{
-  grid-area: 1 / 6 / 1 / 7; 
-  height: 21px;
-  text-align: right;
-}
-
-.news-thumbnail{
-  grid-area: 2 / 1 / 4 / 3; 
-  text-align: center;
-}
-
-.news-info{
-  grid-area: 2 / 3 / 3 / 7; 
-  margin-left: 17px;
-}
-
-.news-content{
-  grid-area: 3 / 3 / 4 / 7; 
-  text-align: justify;
-  margin-left: 17px;
-}
+  
+  .more{
+    grid-area: 1 / 6 / 1 / 7; 
+    height: 21px;
+    text-align: right;
+  }
+  
+  .news-thumbnail{
+    grid-area: 2 / 1 / 4 / 3; 
+    text-align: center;
+  }
+  
+  .news-info{
+    grid-area: 2 / 3 / 3 / 7; 
+    margin-left: 17px;
+  }
+  
+  .news-content{
+    grid-area: 3 / 3 / 4 / 7; 
+    text-align: justify;
+    margin-left: 17px;
+  }
   ```
 - 썸네일 이미지에 shadow 설정
-```css
-.news-thumbnail img{
-  width: 112px;
-  height: 66px;
-  box-shadow: 0px 15px 15px 5px #AAAAAA;
-}
-```
+  ```css
+  .news-thumbnail img{
+    width: 112px;
+    height: 66px;
+    box-shadow: 0px 15px 15px 5px #AAAAAA;
+  }
+  ```
 - caption의 위치 조정
-```css
-.news-thumbnail figcaption{
-  margin-top: 16px;
-}
-```
+  ```css
+  .news-thumbnail figcaption{
+    margin-top: 16px;
+  }
+  ```
 - 가상요소(::after)를 사용하여 새소식 아래 회색선을 표현
-```css
-.news-title{
-  position: relative;
-}
-
-.news-title::after{
-  content: '';
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 266px;
-  height: 1px;
-  background: linear-gradient(90deg, #A9A9A9 -1.32%, #FFFFFF 100%);
-}
-``` 
+  ```css
+  .news-title{
+    position: relative;
+  }
+  
+  .news-title::after{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 266px;
+    height: 1px;
+    background: linear-gradient(90deg, #A9A9A9 -1.32%, #FFFFFF 100%);
+  }
+  ``` 
