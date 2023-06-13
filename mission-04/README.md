@@ -9,6 +9,7 @@
 - mission-04/README.md 파일을 생성한 후 마크업 코드와 CSS 코드에 대한 설명을 적고 아래 이미지와 같이 완성된 UI 스크린샷을 삽입한다.
 
 ## :camera: 결과 스크린샷
+![image](https://github.com/shju0317/home-work/assets/31871923/05dc78d2-6756-4dde-8147-0357b0607732)
 
 
 ## :speech_balloon: 코드리뷰
@@ -40,3 +41,74 @@ body{
 }
 ```
 (폰트설정 관련 참고: https://github.com/orioncactus/pretendard )
+
+- grid를 활용하여 레이아웃을 구현. 6개의 열과 행은 auto로 설정.
+  ```css
+  .news{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+  }
+  ```
+- 시안대로 각 요소 배치
+  ```css
+  .news-title{
+    grid-area: 1 / 1 / 3 / 1;   
+    height: 21px;
+    font-weight: 700;
+    color: #ED552F;
+    position: relative;
+  }
+
+.more{
+  grid-area: 1 / 6 / 1 / 7; 
+  height: 21px;
+  text-align: right;
+}
+
+.news-thumbnail{
+  grid-area: 2 / 1 / 4 / 3; 
+  text-align: center;
+}
+
+.news-info{
+  grid-area: 2 / 3 / 3 / 7; 
+  margin-left: 17px;
+}
+
+.news-content{
+  grid-area: 3 / 3 / 4 / 7; 
+  text-align: justify;
+  margin-left: 17px;
+}
+  ```
+- 썸네일 이미지에 shadow 설정
+```css
+.news-thumbnail img{
+  width: 112px;
+  height: 66px;
+  box-shadow: 0px 15px 15px 5px #AAAAAA;
+}
+```
+- caption의 위치 조정
+```css
+.news-thumbnail figcaption{
+  margin-top: 16px;
+}
+```
+- 가상요소(::after)를 사용하여 새소식 아래 회색선을 표현
+```css
+.news-title{
+  position: relative;
+}
+
+.news-title::after{
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 266px;
+  height: 1px;
+  background: linear-gradient(90deg, #A9A9A9 -1.32%, #FFFFFF 100%);
+}
+``` 
