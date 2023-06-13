@@ -42,7 +42,7 @@
   ```
 (폰트설정 관련 참고: https://github.com/orioncactus/pretendard )
 
-- grid를 활용하여 레이아웃을 구현. 6개의 열과 행은 auto로 설정.
+- grid를 활용하여 레이아웃을 구현하기 위해 6개의 열과 행은 auto로 설정
   ```css
   .news{
     display: grid;
