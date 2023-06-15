@@ -143,7 +143,13 @@
   font-size: 11px;
 }
 ```
-- fontawsome을 사용하여 '더보기' 앞의 '플러스(+)' 이미지 표현
+- fontawesome을 사용하여 '더보기' 앞의 '플러스(+)' 이미지 표현
+```html
+ <link rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+  integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+  crossorigin="anonymous" />
+```
 ```html
   <a href="#" title="인기사이트" class="favorite__more">
     <span class="far fa-plus-square accentMore" aria-hidden="true"></span>더보기
