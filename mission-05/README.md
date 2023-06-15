@@ -8,6 +8,7 @@
 - mission-05/README.md 파일을 생성한 후 마크업 코드와 CSS 코드에 대한 설명을 적고 아래 이미지와 같이 완성된 UI 스크린샷을 삽입한다.
 
 ## :camera: 결과 스크린샷
+![mission5](https://github.com/shju0317/home-work/assets/31871923/8136e9fb-db3a-41df-9b68-8e8ab0492fd3)
 
 
 
@@ -53,3 +54,103 @@
   ```
 (폰트설정 관련 참고: https://github.com/orioncactus/pretendard )
 
+- linear-gradient를 사용하여 section(.favorite)의 배경색 지정
+  ```css
+  .gradient-effect {
+  width: 200px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: linear-gradient(#ccc, #eee);
+  }
+  ```
+- 가상요소(::before)를 사용하여 순위(1~4위)를 나타냄. 1부터 4까지의 숫자는 counter를 사용하여 설정
+  ```css
+  .favorite__item{
+    display: flex;
+    align-items: center;
+    counter-increment: number;
+    padding-top: 8px;
+    line-height: 25px;
+    font-size: 11px;
+  }
+  
+  .favorite__item::before{
+    display: inline-block;
+    content: counter(number);
+    background-color: #A3A3A3;
+    width: 16px;
+    height: 16px;
+    line-height: 150%;
+    text-align: center;
+    padding: 4px;
+    margin-right: 4px;
+    font-size: 11px;
+    color: #fff;
+    border-radius: 5px;
+  }
+  ```
+- 링크의 선택 영역을 넓히기 위해 flex-grow를 사용하여 링크의 너비를 넓힘
+  ```css
+  .favorite__item a{
+  display: inline-block;
+  flex-grow: 1;
+  }
+  ```
+- sprite 기법으로 랭킹 변동을 나타내는 화살표 이미지 삽입
+```css
+.sprite {
+  display: inline-block;
+  background: url(./images/rank.png) no-repeat;
+  background-position: right;
+  height: 10px;
+  width: 9px;
+}
+
+.spriteUp{
+  background-position: right 0;
+}
+
+.spriteFreeze{
+  background-position: right -22px;
+}
+
+.spriteDown{
+  background-position: right -45px;
+}
+```
+- 가운데 정렬하기 위해서 align-items:center 사용
+```css
+.favorite__item{
+  display: flex;
+  align-items: center;
+  counter-increment: number;
+  padding-top: 8px;
+  line-height: 25px;
+  font-size: 11px;
+}
+```
+- '더보기'의 위치가 상단 우측에 위치할 수 있도록 position:absolute 사용
+```css
+  .favorite{
+    position: relative;
+    padding: 12px;
+  }
+
+.favorite__more{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 11px;
+}
+```
+- fontawsome을 사용하여 '더보기' 앞의 '플러스(+)' 이미지 표현
+```html
+  <a href="#" title="인기사이트" class="favorite__more">
+    <span class="far fa-plus-square accentMore" aria-hidden="true"></span>더보기
+  </a>
+```
+```css
+.accentMore{
+  color: #447231;
+}
+```
