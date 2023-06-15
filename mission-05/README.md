@@ -129,7 +129,7 @@
     font-size: 11px;
   }
   ```
-  - '더보기'의 위치가 상단 우측에 위치할 수 있도록 position:absolute 사용
+- '더보기'의 위치가 상단 우측에 위치할 수 있도록 position:absolute 사용
   ```css
     .favorite{
       position: relative;
