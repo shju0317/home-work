@@ -97,66 +97,66 @@
   }
   ```
 - sprite 기법으로 랭킹 변동을 나타내는 화살표 이미지 삽입
-```css
-.sprite {
-  display: inline-block;
-  background: url(./images/rank.png) no-repeat;
-  background-position: right;
-  height: 10px;
-  width: 9px;
-}
-
-.spriteUp{
-  background-position: right 0;
-}
-
-.spriteFreeze{
-  background-position: right -22px;
-}
-
-.spriteDown{
-  background-position: right -45px;
-}
-```
-- 가운데 정렬하기 위해서 align-items:center 사용
-```css
-.favorite__item{
-  display: flex;
-  align-items: center;
-  counter-increment: number;
-  padding-top: 8px;
-  line-height: 25px;
-  font-size: 11px;
-}
-```
-- '더보기'의 위치가 상단 우측에 위치할 수 있도록 position:absolute 사용
-```css
-  .favorite{
-    position: relative;
-    padding: 12px;
+  ```css
+  .sprite {
+    display: inline-block;
+    background: url(./images/rank.png) no-repeat;
+    background-position: right;
+    height: 10px;
+    width: 9px;
   }
-
-.favorite__more{
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  font-size: 11px;
-}
-```
+  
+  .spriteUp{
+    background-position: right 0;
+  }
+  
+  .spriteFreeze{
+    background-position: right -22px;
+  }
+  
+  .spriteDown{
+    background-position: right -45px;
+  }
+  ```
+- 가운데 정렬하기 위해서 align-items:center 사용
+  ```css
+  .favorite__item{
+    display: flex;
+    align-items: center;
+    counter-increment: number;
+    padding-top: 8px;
+    line-height: 25px;
+    font-size: 11px;
+  }
+  ```
+  - '더보기'의 위치가 상단 우측에 위치할 수 있도록 position:absolute 사용
+  ```css
+    .favorite{
+      position: relative;
+      padding: 12px;
+    }
+  
+  .favorite__more{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 11px;
+  }
+  ```
 - fontawesome을 사용하여 '더보기' 앞의 '플러스(+)' 이미지 표현
-```html
- <link rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-  integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-  crossorigin="anonymous" />
-```
-```html
-  <a href="#" title="인기사이트" class="favorite__more">
-    <span class="far fa-plus-square accentMore" aria-hidden="true"></span>더보기
-  </a>
-```
-```css
-.accentMore{
-  color: #447231;
-}
-```
+  ```html
+   <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous" />
+  ```
+  ```html
+    <a href="#" title="인기사이트" class="favorite__more">
+      <span class="far fa-plus-square accentMore" aria-hidden="true"></span>더보기
+    </a>
+  ```
+  ```css
+  .accentMore{
+    color: #447231;
+  }
+  ```
